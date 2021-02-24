@@ -5,6 +5,8 @@
 npm install
 ```
 
+Create `.env.local` file with `VUE_APP_POSTS_URL` variable defined with URL from test's task.
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
