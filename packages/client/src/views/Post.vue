@@ -28,7 +28,7 @@ export default {
   components: { UserAvatarCard },
   computed: {
     post() {
-      return this.$store.state.posts.find(({ id }) => parseInt(this.id) === id);
+      return this.$store.getters.getPost(parseInt(this.id));
     },
     notFound() {
       return this.post === undefined;
